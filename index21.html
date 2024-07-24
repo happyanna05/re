@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>이주하 포트폴리오</title>
+<link rel="stylesheet" href="/css/layout2.css?ver=1.2" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,500,600,700,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marvel:400,700&display=swap">
+<link rel="stylesheet" href="/css/font-awesome/all.css">
+<link rel="icon" href="/images/favicon.png" type="image/png">
+<script src="/script/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<!-- 헤더영역 -->
+    <header id="header">
+		<div class="header_inner">
+			<h1>Lee Juha</h1>
+			<nav id="gnb">
+				<ul class="main_menu">
+					<li>
+						<a href="#">
+						about
+						</a>		
+						<ul class="submenu">
+							<li><a href="#">subMenu1</a></li>
+							<li><a href="#">subMenu2</a></li>
+							<li><a href="#">subMenu3</a></li>
+							<li><a href="#">subMenu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">portfolio</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>		
+			</nav>
+			<!-- 백그라운드 이미지를 이용한 구현방법 -->		
+			<strong class="img_ico">이력서 다운로드</strong>
+			<!--// 백그라운드 이미지를 이용한 구현방법 -->
+		</div>			
+	</header>	
+	<script>		
+		$(window).scroll(function(){
+            if ($(window).scrollTop() >= 20) {
+               $('#header').addClass('fixed');
+            }
+            else {
+               $('#header').removeClass('fixed');
+            }
+        });    	
+	</script>
+	<!--// 헤더영역 -->
+	<!-- 컨테이너 영역 -->
+    <div id="container">
+        <div class="main_banner">
+            <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-center-horz="true" data-cycle-center-vert="true" data-cycle-swipe="true" data-cycle-timeout="2000" data-cycle-slides=".visual_img" data-cycle-pager=".cycle-pager" data-cycle-prev=".prev" data-cycle-next=".next" style="height:735px;" >
+                <span style="background-image:url(/images/main/img_main_banner1.jpg)" class="visual_img"></span>
+                <span style="background-image:url(/images/main/img_main_banner2.jpg)" class="visual_img"></span>
+                <span style="background-image:url(/images/main/img_main_banner3.jpg)" class="visual_img"></span>
+            </div>
+			<div class="cycle-pager"></div>
+			<span class="prev"><i class="fas fa-angle-left"></i></span>				
+			<span class="next"><i class="fas fa-angle-right"></i></span>
+    	</div>
+		<script src="/script/jquery.cycle2.min.js"></script>
+		<script src="/script/jquery.cycle2.swipe.min.js"></script>
+		<script src="/script/jquery.cycle2.center.js"></script>
+        <section class="about_area">
+            <div class="tit_area"> 
+				<span>ABOUT</span> 
+				<strong>LEE JUHA</strong>
+                <p>보다 차별화된 서비스와 신선한 아이템 제공으로 </p>
+                <p>최상의 고객만족도 보장은 물론 매출의 극대화를 창출합니다.</p>
+            </div>
+            <article class="about_con">
+				<ul class="about_tab">
+					<li class="on" title="tab1">Profile</li>
+					<li title="tab2">History</li>
+					<li title="tab3">Introduce</li>
+				</ul>
+                <div class="about_con_inner">
+					<div id="tab1" class="tab_content tab_con1">
+						<div class="left_area">
+							<p>
+								<span>#Profile</span><strong>01</strong><em><a href="/sub/portfolio.html" target="_blank">read more</a></em>
+							</p>
+							<p class="about_headline"> 웹디자인에 대한 생각을 바꾸다. </p>
+							<p class="about_subline"> 처음 웹디자인을 시작하고 나도 모르게 계속 빠져드는 
+								마법같은 일을 겪고 이 길이 나의 길인가 생각하게 되었습니다.
+								현실에 안주하지 않고 항상 발전하는 웹디자이너가 되도록 노력하겠습니다. </p>
+						</div>			
+					</div>
+					<div id="tab2" class="tab_content tab_con2">
+						<div class="left_area">
+							<p>
+								<span>#History</span><strong>02</strong><em><a href="/sub/portfolio.html" target="_blank">read more</a></em>
+							</p>
+							<p class="about_headline"> 웹디자이너로서의 길 </p>
+							<p class="about_subline"> 처음 웹디자인을 시작하고 나도 모르게 계속 빠져드는 
+								마법같은 일을 겪고 이 길이 나의 길인가 생각하게 되었습니다.
+								현실에 안주하지 않고 항상 발전하는 웹디자이너가 되도록 노력하겠습니다. </p>
+						</div>		
+					</div>
+					<div id="tab3" class="tab_content tab_con3">
+						<div class="left_area">
+							<p>
+								<span>#Introduce</span><strong>03</strong><em><a href="/sub/portfolio.html" target="_blank">read more</a></em>
+							</p>
+							<p class="about_headline"> 웹디자이너로서의 길 </p>
+							<p class="about_subline"> 처음 웹디자인을 시작하고 나도 모르게 계속 빠져드는 
+								마법같은 일을 겪고 이 길이 나의 길인가 생각하게 되었습니다.
+								현실에 안주하지 않고 항상 발전하는 웹디자이너가 되도록 노력하겠습니다. </p>
+						</div>		
+					</div>
+                </div>
+            </article>
+        </section>
+        <section class="portfolio_area">
+            <div class="tit_area"> <span>portfolio</span> <strong>portfolio</strong>
+                <p>하나를 제작하더라도 완벽하게 만들고 있습니다.</p>
+            </div>
+            <div class="gallery_slide">
+                <div class="ctrl_btn"></div>
+				<div class="slide_box cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-center-horz="true" data-cycle-center-vert="true" data-cycle-swipe="true" data-cycle-timeout="0" data-cycle-slides=".slide_inner" data-cycle-pager=".ctrl_btn" style="">
+					<ul class="slide_inner">
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#null">View More</a> </div>
+								</div>
+							</div>
+						</li>
+					</ul>	
+					<ul class="slide_inner">
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#">View More</a> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li_img"> 
+								<img src="/images/main/img_thumb1.jpg" alt="">
+								<div class="over">
+									<div class="over_con"> <strong>카린 선글라스</strong> <span>Homepage</span> <a href="#null">View More</a> </div>
+								</div>
+							</div>
+						</li>
+					</ul>					
+				</div>
+            	<!-- 포트폴리오 더보기 버튼 -->
+				<strong class="more_btn">
+					<a href="#">포트폴리오 더보기</a>
+				</strong>	
+            	<!--// 포트폴리오 더보기 버튼 -->			
+			</div>			
+        </section>		
+		<!-- 팝업레이어 -->
+		<div id="popup">
+			<!--input type="button" value="닫기" id="close_popup" src="/images/main/close_btn.gif"-->
+			<div class="popup_wrap">
+				<div id="close_btn">
+					<strong>
+						<img src="/images/main/btn_close.gif" alt="">
+					</strong>				
+				</div>
+				<div class="portfolio_inner">
+					<table class="detail_info">
+						<caption>포트폴리오 정보</caption>
+						<colgroup>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>Client</th>
+								<td>칼린 선글라스</td>
+								<th>Overview</th>
+							</tr>
+							<tr>
+								<th>Category</th>
+								<td>쇼핑몰</td>
+								<td rowspan="2">고품격 선글라스를 판매하고 있는 쇼핑몰로 사용자가 이용하기 편리하도록 상품을 배치하였고 심플하면서도 세련된 레이아웃 템플릿 구조로 칼린 선글라스의 다양한 제품들이 한 눈에 보일 수 있도록 구성하였습니다.</td>
+							</tr>
+							<tr>
+								<th>Site url</th>
+								<td><a href="http://www.caringlasses.com/" target="_blank">http://www.caringlasses.com/</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="img_detail">
+						<div class="main_detail">
+							<strong class="tit">
+								Main Page
+							</strong>
+							<div class="detail_inner">
+								<img src="/images/main/img_main_detail.jpg" alt="">
+							</div>
+
+						</div>
+
+					</div>				
+				</div>
+			</div>	
+		</div>	
+		<!--// 팝업레이어 -->
+        <section class="skill_area"> 
+			<strong class="tit_area"> 
+				Program <em>Skills</em> 			
+			</strong>
+            <ul class="skill_inner">
+                <li class="m1">
+                    <div class="txt_skill"> 
+						<strong>HTML5, CSS</strong> 
+						<div class="graph stack1">
+							<em style="width:75%;">75%</em> 
+						</div>
+					</div>
+                    <p>웹표준을 기반으로 제작하여 다양한 브라우저에서도 문제없이 호환될 수 있도록 표현합니다.</p>
+                </li>
+                <li class="m2">
+                    <div class="txt_skill"> <strong>jQuery</strong>
+					
+						<div class="graph stack2">
+							<em style="width:35%;">35%</em> 
+						</div>
+					</div>
+                    <p>웹표준을 기반으로 제작하여 다양한 브라우저에서도 문제없이 호환될 수 있도록 표현합니다.</p>
+                </li>
+            </ul>
+            <ul class="skill_inner">
+                <li class="m3">
+                    <div class="txt_skill"> 
+						<strong>Dreamweaver</strong> 
+						<div class="graph stack3">
+							<em style="width:60%;">60%</em> 
+						</div>
+						
+					</div>
+                    <p>웹표준을 기반으로 제작하여 다양한 브라우저에서도 문제없이 호환될 수 있도록 표현합니다.</p>
+                </li>
+                <li class="m4">
+                    <div class="txt_skill"> <strong>Photoshop</strong> 
+						<div class="graph stack4">
+							<em style="width:25%;">25%</em> 
+						</div> </div>
+                    <p>웹표준을 기반으로 제작하여 다양한 브라우저에서도 문제없이 호환될 수 있도록 표현합니다.</p>
+                </li>
+                <li class="m5">
+                    <div class="txt_skill"> <strong>Illustrator</strong> 
+						<div class="graph stack5">
+							<em style="width:85%;">85%</em> 
+						</div> </div>
+                    <p>웹표준을 기반으로 제작하여 다양한 브라우저에서도 문제없이 호환될 수 있도록 표현합니다.</p>
+                </li>
+            </ul>
+        </section>
+        <script>
+        
+/* nav skill  영역 */
+$(window).scroll(function() {
+	var scroll = $(window).scrollTop();
+	//console.log(scroll);
+	if (scroll >= 1000) {
+		//console.log('a');
+		$(".skill_area").addClass("on");
+	} else {
+		//console.log('a');
+		$(".skill_area").removeClass("on");
+	}
+});        
+      
+        
+        </script>
+    </div>
+	<!--// 컨테이너 영역 -->
+	<!-- 푸터영역 -->
+	<footer id="footer">
+		<div class="footer_inner">
+			<div class="left_col">
+				<p class="tit">Contact me</p>
+				<p>Tel. 010-1111-1111</p>
+				<p>E-mail. teounyoung@naver.com</p>		
+			</div>
+			<div class="right_col">
+				<p>해당 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었습니다.</p>
+				<p>사용된 모든 이미지들은 출처가 따로 있으며 포트폴리오 용도로만 사용되었습니다.</p>	
+				<p class="copyright">ⓒ 2020 JUHA. all rights reserved. </p>	
+			</div>
+		</div>
+	</footer>
+	<!--// 푸터영역 -->
+</div>
+<div class="layer_bg"></div>
+<div class="gotop" id="gotop" style="display: none;">
+	<img src="/images/common/btn_top.gif" alt="">
+</div>
+<script src="/script/main0.js"></script>
+<script>
+	$(function(){
+		$("div.gotop").fadeOut("slow");
+
+		$(window).scroll(function(){
+			setTimeout(scroll_top, 500);//화살표가 반응하여 생기는 시간
+		});
+
+		$("#gotop").on("click", function(){
+			$('html, body').animate({scrollTop:0}, 'slow');
+		});
+
+	});	
+	function scroll_top(){
+		if($(window).scrollTop()<=1) {
+			$("#gotop").fadeOut("slow");
+		}else{
+			$("#gotop").fadeIn("slow");
+
+		}
+	}
+</script>
+</body>
+</html>
